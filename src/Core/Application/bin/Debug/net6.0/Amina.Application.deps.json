@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Amina.Application/1.0.0": {
+        "dependencies": {
+          "Amina.Domain": "1.0.0",
+          "Amina.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Amina.Application.dll": {}
+        }
+      },
+      "Amina.Domain/1.0.0": {
+        "dependencies": {
+          "Amina.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Amina.Domain.dll": {}
+        }
+      },
+      "Amina.Shared/1.0.0": {
+        "runtime": {
+          "Amina.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Amina.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amina.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amina.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

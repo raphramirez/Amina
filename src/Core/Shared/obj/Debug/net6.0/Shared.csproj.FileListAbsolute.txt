@@ -1,0 +1,12 @@
+D:\Git\s2dioapps\Amina\src\Core\Shared\bin\Debug\net6.0\Amina.Shared.deps.json
+D:\Git\s2dioapps\Amina\src\Core\Shared\bin\Debug\net6.0\Amina.Shared.dll
+D:\Git\s2dioapps\Amina\src\Core\Shared\bin\Debug\net6.0\Amina.Shared.pdb
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Amina.Shared.dll
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\refint\Amina.Shared.dll
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Amina.Shared.pdb
+D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\ref\Amina.Shared.dll

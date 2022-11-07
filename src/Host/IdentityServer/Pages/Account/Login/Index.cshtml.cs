@@ -1,4 +1,4 @@
-using Amina.IdentityServer.Models;
+using Amina.IdentityServer.Identity;
 using Amina.IdentityServer.Pages;
 using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Models;

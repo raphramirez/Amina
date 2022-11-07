@@ -1,5 +1,4 @@
-using Amina.IdentityServer.Models;
-using Amina.IdentityServer.Pages;
+using Amina.IdentityServer.Identity;
 using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Extensions;
 using Duende.IdentityServer.Services;
@@ -14,7 +13,7 @@ namespace Amina.IdentityServer.Pages.Account.Logout
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    public class Index : PageModel
+    public class IndexModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IIdentityServerInteractionService _interaction;
@@ -23,7 +22,7 @@ namespace Amina.IdentityServer.Pages.Account.Logout
         [BindProperty]
         public string LogoutId { get; set; }
 
-        public Index(SignInManager<ApplicationUser> signInManager, IIdentityServerInteractionService interaction, IEventService events)
+        public IndexModel(SignInManager<ApplicationUser> signInManager, IIdentityServerInteractionService interaction, IEventService events)
         {
             _signInManager = signInManager;
             _interaction = interaction;

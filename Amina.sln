@@ -3,9 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3EC964C-141B-49C2-90A5-0E92C107ECCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7B46A747-164B-4EDF-9512-3DA16212D184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{E3072955-D45C-44FC-A56F-F6E9E303B61A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Core\Domain\Domain.csproj", "{893E9D24-302D-40DE-983D-F002F1B34783}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Core\Application\Application.csproj", "{06A91C81-6ADA-4B52-87EB-AA230FE57714}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Core\Shared\Shared.csproj", "{D9683DDD-29EE-46C3-9549-72B1D2AFA007}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\Host\IdentityServer\IdentityServer.csproj", "{2A35C3AD-456E-483D-9107-AC8F75FE4994}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893E9D24-302D-40DE-983D-F002F1B34783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893E9D24-302D-40DE-983D-F002F1B34783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893E9D24-302D-40DE-983D-F002F1B34783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893E9D24-302D-40DE-983D-F002F1B34783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A91C81-6ADA-4B52-87EB-AA230FE57714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A91C81-6ADA-4B52-87EB-AA230FE57714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A91C81-6ADA-4B52-87EB-AA230FE57714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A91C81-6ADA-4B52-87EB-AA230FE57714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9683DDD-29EE-46C3-9549-72B1D2AFA007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9683DDD-29EE-46C3-9549-72B1D2AFA007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9683DDD-29EE-46C3-9549-72B1D2AFA007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9683DDD-29EE-46C3-9549-72B1D2AFA007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A35C3AD-456E-483D-9107-AC8F75FE4994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A35C3AD-456E-483D-9107-AC8F75FE4994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A35C3AD-456E-483D-9107-AC8F75FE4994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A35C3AD-456E-483D-9107-AC8F75FE4994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B46A747-164B-4EDF-9512-3DA16212D184} = {C3EC964C-141B-49C2-90A5-0E92C107ECCF}
+		{E3072955-D45C-44FC-A56F-F6E9E303B61A} = {C3EC964C-141B-49C2-90A5-0E92C107ECCF}
+		{893E9D24-302D-40DE-983D-F002F1B34783} = {7B46A747-164B-4EDF-9512-3DA16212D184}
+		{06A91C81-6ADA-4B52-87EB-AA230FE57714} = {7B46A747-164B-4EDF-9512-3DA16212D184}
+		{D9683DDD-29EE-46C3-9549-72B1D2AFA007} = {7B46A747-164B-4EDF-9512-3DA16212D184}
+		{5CB4E8CF-D7ED-4BC2-9EBC-1884BAC1C08A} = {C3EC964C-141B-49C2-90A5-0E92C107ECCF}
+		{2A35C3AD-456E-483D-9107-AC8F75FE4994} = {E3072955-D45C-44FC-A56F-F6E9E303B61A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B34D5E2-4041-4360-8D81-CBE638C0E2BB}

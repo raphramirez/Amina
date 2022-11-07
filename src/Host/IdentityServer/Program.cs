@@ -1,4 +1,5 @@
-﻿using IdentityServer;
+﻿using Amina.IdentityServer;
+using Amina.IdentityServer.Persistence;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -25,7 +26,10 @@ try
     if (args.Contains("/seed"))
     {
         Log.Information("Seeding database...");
-        SeedData.EnsureSeedData(app);
+
+        await SeedData.SetupTenants(app, builder.Configuration);
+        await SeedData.EnsureSeedData(app);
+
         Log.Information("Done seeding database. Exiting.");
         return;
     }
