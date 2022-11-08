@@ -1,5 +1,4 @@
 using Amina.IdentityServer.Identity;
-using Amina.IdentityServer.Pages;
 using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
@@ -67,7 +66,7 @@ namespace Amina.IdentityServer.Pages.Account.Login
             {
                 if (context != null)
                 {
-                    // if the user cancels, send a result back into IdentityServer as if they 
+                    // if the user cancels, send a result back into IdentityServer as if they
                     // denied the consent (even if this client does not require consent).
                     // this will send back an access denied OIDC error response to the client.
                     await _interaction.DenyAuthorizationAsync(context, AuthorizationError.AccessDenied);
@@ -181,7 +180,6 @@ namespace Amina.IdentityServer.Pages.Account.Login
                     DisplayName = x.DisplayName
                 });
             providers.AddRange(dyanmicSchemes);
-
 
             var allowLocal = true;
             var client = context?.Client;

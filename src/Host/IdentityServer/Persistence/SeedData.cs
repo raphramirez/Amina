@@ -16,6 +16,9 @@ public class SeedData
     {
         using (var scope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
         {
+            var context = scope.ServiceProvider.GetService<TenantDbContext>();
+            context.Database.Migrate();
+
             var store = scope.ServiceProvider.GetRequiredService<IMultiTenantStore<MultiTenantInfo>>();
 
             var tenants = await store.GetAllAsync();
@@ -26,7 +29,7 @@ public class SeedData
             }
 
             await store.TryAddAsync(new MultiTenantInfo
-            {
+            {                               
                 Id = Guid.NewGuid().ToString(),
                 Identifier = "localhost",
                 Name = "My Identity Dev Tenant",

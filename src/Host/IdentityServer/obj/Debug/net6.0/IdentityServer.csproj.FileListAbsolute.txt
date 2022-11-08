@@ -80,3 +80,4 @@ D:\Git\s2dioapps\Amina\src\host\IdentityServer\obj\Debug\net6.0\refint\Amina.Ide
 D:\Git\s2dioapps\Amina\src\host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.pdb
 D:\Git\s2dioapps\Amina\src\host\IdentityServer\obj\Debug\net6.0\IdentityServer.genruntimeconfig.cache
 D:\Git\s2dioapps\Amina\src\host\IdentityServer\obj\Debug\net6.0\ref\Amina.IdentityServer.dll
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-7E8122036B89C2F1B1194CC807BA1678.json
