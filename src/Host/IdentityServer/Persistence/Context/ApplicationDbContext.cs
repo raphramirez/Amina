@@ -1,27 +1,21 @@
 ﻿using Amina.IdentityServer.Identity;
-using Amina.IdentityServer.Multitenancy;
 using Finbuckle.MultiTenant;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Amina.IdentityServer.Persistence.Context;
 
-public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+public class ApplicationDbContext : MultiTenantIdentityDbContext<ApplicationUser>
 {
-    private readonly MultiTenantInfo _tenant;
+    private readonly ITenantInfo _tenant;
     private readonly IWebHostEnvironment _env;
     private readonly IConfiguration _configuration;
 
-    public ApplicationDbContext(
-        DbContextOptions<ApplicationDbContext> options,
-        IMultiTenantContextAccessor<MultiTenantInfo> accessor,
-        IWebHostEnvironment env,
-        IConfiguration configuration
-        ) : base(options)
+    public ApplicationDbContext(ITenantInfo tenantInfo, DbContextOptions<ApplicationDbContext> options, IConfiguration configuration, IWebHostEnvironment env) : base(tenantInfo, options)
     {
-        _tenant = accessor.MultiTenantContext?.TenantInfo;
-        _env = env;
         _configuration = configuration;
+        _env = env;
+
+        _tenant = tenantInfo;
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

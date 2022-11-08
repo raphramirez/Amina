@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Amina.IdentityServer.Persistence.Migrations.Tenants
 {
     [DbContext(typeof(TenantDbContext))]
-    [Migration("20221107132642_TenantsInitialMigration")]
+    [Migration("20221108022255_TenantsInitialMigration")]
     partial class TenantsInitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

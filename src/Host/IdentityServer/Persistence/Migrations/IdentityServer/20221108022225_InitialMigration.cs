@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
 {
-    public partial class AppInitialMigration : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,6 +15,7 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "text", nullable: false),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                     Name = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
@@ -29,6 +30,7 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "text", nullable: false),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                     UserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
@@ -57,7 +59,8 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     RoleId = table.Column<string>(type: "text", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
-                    ClaimValue = table.Column<string>(type: "text", nullable: true)
+                    ClaimValue = table.Column<string>(type: "text", nullable: true),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,7 +81,8 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserId = table.Column<string>(type: "text", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
-                    ClaimValue = table.Column<string>(type: "text", nullable: true)
+                    ClaimValue = table.Column<string>(type: "text", nullable: true),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,14 +99,16 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
+                    Id = table.Column<string>(type: "text", nullable: false),
                     LoginProvider = table.Column<string>(type: "text", nullable: false),
                     ProviderKey = table.Column<string>(type: "text", nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<string>(type: "text", nullable: false)
+                    UserId = table.Column<string>(type: "text", nullable: false),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetUserLogins", x => new { x.LoginProvider, x.ProviderKey });
+                    table.PrimaryKey("PK_AspNetUserLogins", x => x.Id);
                     table.ForeignKey(
                         name: "FK_AspNetUserLogins_AspNetUsers_UserId",
                         column: x => x.UserId,
@@ -116,7 +122,8 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                 columns: table => new
                 {
                     UserId = table.Column<string>(type: "text", nullable: false),
-                    RoleId = table.Column<string>(type: "text", nullable: false)
+                    RoleId = table.Column<string>(type: "text", nullable: false),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -142,7 +149,8 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
                     UserId = table.Column<string>(type: "text", nullable: false),
                     LoginProvider = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    Value = table.Column<string>(type: "text", nullable: true)
+                    Value = table.Column<string>(type: "text", nullable: true),
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -163,13 +171,19 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
-                column: "NormalizedName",
+                columns: new[] { "NormalizedName", "TenantId" },
                 unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
                 table: "AspNetUserClaims",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AspNetUserLogins_LoginProvider_ProviderKey_TenantId",
+                table: "AspNetUserLogins",
+                columns: new[] { "LoginProvider", "ProviderKey", "TenantId" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserLogins_UserId",
@@ -189,7 +203,7 @@ namespace Amina.IdentityServer.Persistence.Migrations.IdentityServer
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
                 table: "AspNetUsers",
-                column: "NormalizedUserName",
+                columns: new[] { "NormalizedUserName", "TenantId" },
                 unique: true);
         }
 

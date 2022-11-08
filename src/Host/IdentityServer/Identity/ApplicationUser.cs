@@ -1,11 +1,12 @@
 ﻿// Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
+using Finbuckle.MultiTenant;
 using Microsoft.AspNetCore.Identity;
 
 namespace Amina.IdentityServer.Identity;
 
-// Add profile data for application users by adding properties to the ApplicationUser class
+[MultiTenant]
 public class ApplicationUser : IdentityUser
 {
 }
