@@ -68,7 +68,7 @@ public class DatabaseInitializer : IDatabaseInitializer
         {
             Id = "root",
             Name = "Root",
-            Identifier = "localhost",
+            Identifier = "root",
             ConnectionString = _config.GetConnectionString("DefaultConnection")
         };
         _tenantDbContext.TenantInfo.Add(rootTenant);
