@@ -71,8 +71,16 @@ public class DatabaseInitializer : IDatabaseInitializer
             Identifier = "localhost",
             ConnectionString = _config.GetConnectionString("DefaultConnection")
         };
-
         _tenantDbContext.TenantInfo.Add(rootTenant);
+
+        var sampleTenant1 = new MultiTenantInfo
+        {
+            Id = "s2dioapps",
+            Name = "Studio Apps",
+            Identifier = "s2dioapps",
+            ConnectionString = _config.GetConnectionString("Tenant_StudioApps")
+        };
+        _tenantDbContext.TenantInfo.Add(sampleTenant1);
 
         await _tenantDbContext.SaveChangesAsync(cancellationToken);
     }

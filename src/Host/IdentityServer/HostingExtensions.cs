@@ -32,14 +32,16 @@ namespace Amina.IdentityServer
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseRouting();
-            app.UseIdentityServer();
+
             app.UseMultiTenant();
-            app.UseAuthentication();
+
+            app.UseRouting();
+
+            //app.UseAuthentication();
+            app.UseIdentityServer();
             app.UseAuthorization();
 
-            app.MapRazorPages()
-                .RequireAuthorization();
+            app.MapRazorPages();
 
             app.MapControllers();
 

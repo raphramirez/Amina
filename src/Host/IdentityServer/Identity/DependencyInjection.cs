@@ -7,7 +7,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddIdentity(this IServiceCollection services)
     {
-        services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+        services.AddDefaultIdentity<ApplicationUser>(options =>
         {
             // Password settings.
             options.Password.RequireDigit = false;
@@ -18,8 +18,11 @@ public static class DependencyInjection
             options.Password.RequiredUniqueChars = 1;
 
             // User settings.
-            options.User.RequireUniqueEmail = true;
+            options.SignIn.RequireConfirmedAccount = false;
+            options.SignIn.RequireConfirmedPhoneNumber = false;
             options.SignIn.RequireConfirmedEmail = false;
+
+            options.User.RequireUniqueEmail = true;
         })
         .AddEntityFrameworkStores<ApplicationDbContext>()
         .AddDefaultTokenProviders();

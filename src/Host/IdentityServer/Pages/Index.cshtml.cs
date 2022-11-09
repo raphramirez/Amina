@@ -1,28 +1,22 @@
-using Amina.IdentityServer.Multitenancy;
+﻿using Amina.IdentityServer.Multitenancy;
 using Finbuckle.MultiTenant;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Reflection;
 
-namespace Amina.IdentityServer.Pages
+namespace Amina.IdentityServer.Pages;
+
+public class IndexModel : PageModel
 {
-    [AllowAnonymous]
-    public class Index : PageModel
+    private readonly ILogger<IndexModel> _logger;
+
+    public MultiTenantInfo TenantInfo { get; private set; }
+
+    public IndexModel(ILogger<IndexModel> logger)
     {
-        public string Version;
+        _logger = logger;
+    }
 
-        public string TenantId;
-        public string TenantName;
-
-        public Index(IMultiTenantContextAccessor<MultiTenantInfo> Tenant)
-        {
-            TenantId = Tenant.MultiTenantContext?.TenantInfo?.Identifier ?? "no-tenant";
-            TenantName = Tenant.MultiTenantContext?.TenantInfo?.Name ?? "no-tenant";
-        }
-
-        public void OnGet()
-        {
-            Version = typeof(Duende.IdentityServer.Hosting.IdentityServerMiddleware).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion.Split('+').First();
-        }
+    public void OnGet()
+    {
+        TenantInfo = HttpContext.GetMultiTenantContext<MultiTenantInfo>()?.TenantInfo;
     }
 }
