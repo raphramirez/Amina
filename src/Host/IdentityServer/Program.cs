@@ -1,6 +1,7 @@
-﻿using Amina.IdentityServer;
+using Amina.IdentityServer;
 using Amina.IdentityServer.Persistence;
 using Serilog;
+using Microsoft.EntityFrameworkCore;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
