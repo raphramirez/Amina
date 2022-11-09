@@ -35,7 +35,7 @@ internal class ApplicationDbSeeder
     {
         var alice = new ApplicationUser
         {
-            UserName = "alice",
+            UserName = "AliceSmith@email.com",
             Email = "AliceSmith@email.com",
             EmailConfirmed = true,
         };

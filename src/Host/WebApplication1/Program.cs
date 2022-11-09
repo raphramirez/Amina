@@ -16,7 +16,7 @@ builder.Services.AddAuthentication(options =>
     .AddCookie("Cookies")
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = "https://localhost:5001";
+        options.Authority = "https://localhost:5001/s2dioapps/";
 
         options.ClientId = "web";
         options.ClientSecret = "super-secret-key";

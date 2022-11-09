@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\Host\IdentityServer\IdentityServer.csproj", "{2A35C3AD-456E-483D-9107-AC8F75FE4994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "src\Host\WebApplication1\WebApplication1.csproj", "{C9B00917-3C98-4458-B58D-6029686F27BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "src\Host\WebApplication1\WebApplication1.csproj", "{C9B00917-3C98-4458-B58D-6029686F27BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
