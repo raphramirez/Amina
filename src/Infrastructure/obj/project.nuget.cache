@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VFs+b8t5zAhuG147CcMLUglSagj1zhddwWjbZTnpx4A7GfWmZGFmyh2GRKkJQ3SPm/CfzdJZ5PvxnL7FN0VLAw==",
+  "dgSpecHash": "YGYsY6U1d1tYiaXcsRc0VFGN6+CW/LsJlgAvBgP6P7zOH6CVumK9Ri0q4+UnLHG8OWC+TK03PxlnSSU+VGGhLQ==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
