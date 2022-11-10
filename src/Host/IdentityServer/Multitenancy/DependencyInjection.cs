@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Amina.IdentityServer.Multitenancy;
 
@@ -10,7 +9,12 @@ public static class DependencyInjection
         services.AddMultiTenant<MultiTenantInfo>()
             .WithBasePathStrategy(options => options.RebaseAspNetCorePathBase = true)
             .WithEFCoreStore<TenantDbContext, MultiTenantInfo>()
-            .WithPerTenantAuthentication();
+            .WithPerTenantAuthentication()
+            .WithPerTenantOptions<CookieAuthenticationOptions>((o, tenant) =>
+            {
+                o.Cookie.Name = $".Identity_{tenant.Identifier}";
+                o.LoginPath = "/Identity/Account/Login";
+            });
 
         return services;
     }

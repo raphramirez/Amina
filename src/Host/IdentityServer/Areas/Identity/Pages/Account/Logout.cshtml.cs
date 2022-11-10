@@ -1,57 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Amina.IdentityServer.Identity;
-using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
 
-namespace Amina.IdentityServer.Areas.Identity.Pages.Account;
-
-public class LogoutModel : PageModel
+namespace Amina.IdentityServer.Areas.Identity.Pages.Account
 {
-    private readonly SignInManager<ApplicationUser> _signInManager;
-    private readonly ILogger<LogoutModel> _logger;
-    private IIdentityServerInteractionService _interaction;
-
-    public LogoutModel(SignInManager<ApplicationUser> signInManager, ILogger<LogoutModel> logger, IIdentityServerInteractionService interaction)
+    [AllowAnonymous]
+    public class LogoutModel : PageModel
     {
-        _signInManager = signInManager;
-        _logger = logger;
-        _interaction = interaction;
-    }
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ILogger<LogoutModel> _logger;
 
-    public async Task<IActionResult> OnGet(string returnUrl = null)
-    {
-        return await OnPost(returnUrl);
-    }
-
-    public async Task<IActionResult> OnPost(string returnUrl = null)
-    {
-        await _signInManager.SignOutAsync();
-        _logger.LogInformation("User logged out.");
-
-        var logoutId = Request.Query["logoutId"].ToString();
-
-        if (returnUrl != null)
+        public LogoutModel(SignInManager<ApplicationUser> signInManager, ILogger<LogoutModel> logger)
         {
-            return LocalRedirect(returnUrl);
+            _signInManager = signInManager;
+            _logger = logger;
         }
-        else if (!string.IsNullOrEmpty(logoutId))
-        {
-            var logoutContext = await _interaction.GetLogoutContextAsync(logoutId);
-            returnUrl = logoutContext.PostLogoutRedirectUri;
 
-            if (!string.IsNullOrEmpty(returnUrl))
+        public void OnGet()
+        {
+        }
+
+        public async Task<IActionResult> OnPost(string returnUrl = null)
+        {
+            await _signInManager.SignOutAsync();
+
+            _logger.LogInformation("User logged out.");
+
+            Response.Cookies.Delete(".AspNetCore.Identity.Application", new CookieOptions()
             {
-                return Redirect(returnUrl);
+                Path = "/eds-daas"
+            });
+
+            if (returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
             }
             else
             {
-                return Page();
+                return RedirectToPage();
             }
-        }
-        else
-        {
-            return Page();
         }
     }
 }

@@ -21,7 +21,6 @@ public static class DependencyInjection
         .AddInMemoryApiScopes(Config.ApiScopes)
         .AddInMemoryClients(Config.Clients)
         .AddAspNetIdentity<ApplicationUser>();
-
         return services;
     }
 

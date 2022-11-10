@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\Host\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "src\Host\WebApplication1\WebApplication1.csproj", "{C9B00917-3C98-4458-B58D-6029686F27BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\Host\WebAPI\WebAPI.csproj", "{15B83183-BAF7-4E0D-8C73-FF8B0DBDA5D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\Host\WebAPI\WebAPI.csproj", "{15B83183-BAF7-4E0D-8C73-FF8B0DBDA5D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
