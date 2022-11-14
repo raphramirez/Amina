@@ -1,8 +1,8 @@
 using Serilog;
-using Amina.IdentityServer.Identity;
 using Amina.IdentityServer.IdentityServer;
-using Amina.IdentityServer.Persistence;
-using Amina.IdentityServer.Multitenancy;
+using Amina.Infrastructure.Persistence;
+using Amina.Infrastructure.Identity;
+using Amina.Infrastructure.Multitenancy;
 
 namespace Amina.IdentityServer
 {
@@ -15,7 +15,7 @@ namespace Amina.IdentityServer
                 .AddIdentity()
                 .AddDuendeIdentityServer()
                 .AddExternalAuthentication()
-                .AddMultitenancy()
+                .AddIdentityServerMultitenancy()
                 .AddAspNetServices();
 
             return builder.Build();
@@ -33,7 +33,7 @@ namespace Amina.IdentityServer
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseMultiTenant();
+            app.UseMultiTenancy();
 
             app.UseRouting();
 

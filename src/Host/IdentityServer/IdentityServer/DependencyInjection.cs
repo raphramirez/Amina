@@ -1,4 +1,4 @@
-﻿using Amina.IdentityServer.Identity;
+﻿using Amina.Infrastructure.Identity;
 using Duende.IdentityServer;
 
 namespace Amina.IdentityServer.IdentityServer;

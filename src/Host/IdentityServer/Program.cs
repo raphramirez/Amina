@@ -1,7 +1,7 @@
 using Amina.IdentityServer;
-using Amina.IdentityServer.Persistence;
 using Serilog;
 using Microsoft.EntityFrameworkCore;
+using Amina.Infrastructure.Persistence;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -23,16 +23,6 @@ try
         .ConfigurePipeline();
 
     await app.Services.InitializeDatabasesAsync();
-
-    // this seeding is only for the template to bootstrap the DB and users.
-    // in production you will likely want a different approach.
-    if (args.Contains("/seed"))
-    {
-        Log.Information("Seeding database...");
-
-        Log.Information("Done seeding database. Exiting.");
-        return;
-    }
 
     app.Run();
 }

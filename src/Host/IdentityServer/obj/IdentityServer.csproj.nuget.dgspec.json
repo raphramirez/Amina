@@ -4,14 +4,135 @@
     "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj": {}
   },
   "projects": {
-    "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj": {
+    "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
-        "projectName": "Amina.IdentityServer",
-        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj",
+        "projectName": "Amina.Application",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\obj\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj"
+              },
+              "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj",
+        "projectName": "Amina.Domain",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj",
+        "projectName": "Amina.Shared",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,18 +160,72 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
+        "projectName": "Amina.IdentityServer",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
+        "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj"
+              },
+              "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\Migrators.PostgreSQL.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\Migrators.PostgreSQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Duende.IdentityServer.AspNetIdentity": {
               "target": "Package",
               "version": "[6.1.0, )"
-            },
-            "Finbuckle.MultiTenant.AspNetCore": {
-              "target": "Package",
-              "version": "[6.9.0, )"
-            },
-            "Finbuckle.MultiTenant.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.9.0, )"
             },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
@@ -63,36 +238,6 @@
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[6.0.7, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -114,6 +259,180 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Amina.Infrastructure",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Duende.IdentityServer.AspNetIdentity": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Finbuckle.MultiTenant.AspNetCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "Finbuckle.MultiTenant.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\Migrators.PostgreSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\Migrators.PostgreSQL.csproj",
+        "projectName": "Migrators.PostgreSQL",
+        "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\Migrators.PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\s2dioapps\\Amina\\src\\Migrators\\Migrators.PostgreSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
