@@ -30,6 +30,7 @@ public static class DependencyInjection
 
         services.AddTransient<IDatabaseInitializer, IdentityDatabaseInitializer>()
            .AddTransient<IdentityDbInitializer>()
+           .AddTransient<TenantDbInitializer>()
            .AddTransient<IdentityDbSeeder>()
            .AddTransient<CustomSeederRunner>();
 
@@ -42,6 +43,7 @@ public static class DependencyInjection
 
         services.AddTransient<IDatabaseInitializer, ApplicationDatabaseInitializer>()
             .AddTransient<ApplicationDbInitializer>()
+            .AddTransient<TenantDbInitializer>()
             .AddTransient<ApplicationDbSeeder>()
             .AddTransient<CustomSeederRunner>();
 
