@@ -7,15 +7,13 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateBootstrapLogger();
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddWebApiInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseInfrastructure(builder.Configuration);
+app.UseWebApiInfrastructure(builder.Configuration);
 
-app.MapEndpoints();
+app.MapWebApiEndpoints();
 
 app.Run();

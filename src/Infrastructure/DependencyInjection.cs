@@ -17,16 +17,18 @@ namespace Amina.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
+    public static IServiceCollection AddWebApiInfrastructure(this IServiceCollection services, IConfiguration config)
     {
         return services
+            .AddPersistence(config)
+            .AddIdentity()
             .AddAuthentications()
             .AddAuthorizations()
             .AddWebApiMultitenancy()
-            .AddPersistence(config);
+            .AddOpenApiDocumentation();
     }
 
-    public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder builder, IConfiguration config)
+    public static IApplicationBuilder UseWebApiInfrastructure(this IApplicationBuilder builder, IConfiguration config)
     {
         return builder
             .UseHttpsRedirection()
@@ -66,7 +68,7 @@ public static class DependencyInjection
             .UseAuthorization();
     }
 
-    public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder builder)
+    public static IEndpointRouteBuilder MapWebApiEndpoints(this IEndpointRouteBuilder builder)
     {
         builder.MapControllers().RequireAuthorization("ApiScope");
         return builder;
