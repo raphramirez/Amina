@@ -4,7 +4,7 @@ using Amina.Infrastructure.Persistence.Context;
 using Microsoft.AspNetCore.Identity;
 using Serilog;
 
-namespace Amina.Infrastructure.Persistence.Initialization;
+namespace Amina.Infrastructure.Persistence.Initialization.Identity;
 
 internal class IdentityDbSeeder
 {

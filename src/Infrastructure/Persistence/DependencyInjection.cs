@@ -1,6 +1,8 @@
 ﻿using Amina.Infrastructure.Multitenancy;
 using Amina.Infrastructure.Persistence.Context;
 using Amina.Infrastructure.Persistence.Initialization;
+using Amina.Infrastructure.Persistence.Initialization.Application;
+using Amina.Infrastructure.Persistence.Initialization.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

@@ -3,7 +3,7 @@ using Finbuckle.MultiTenant;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
-namespace Amina.Infrastructure.Persistence.Initialization;
+namespace Amina.Infrastructure.Persistence.Initialization.Identity;
 
 internal class IdentityDbInitializer
 {

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
-namespace Amina.Infrastructure.Persistence.Initialization;
+namespace Amina.Infrastructure.Persistence.Initialization.Identity;
 
 internal class IdentityDatabaseInitializer : IDatabaseInitializer
 {

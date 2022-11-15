@@ -2,7 +2,7 @@
 using Amina.Infrastructure.Persistence.Context;
 using Serilog;
 
-namespace Amina.Infrastructure.Persistence.Initialization;
+namespace Amina.Infrastructure.Persistence.Initialization.Application;
 
 internal class ApplicationDbSeeder
 {
