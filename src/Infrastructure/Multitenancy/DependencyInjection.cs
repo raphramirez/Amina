@@ -1,10 +1,12 @@
 ﻿using Amina.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Primitives;
+using Serilog;
 
 namespace Amina.Infrastructure.Multitenancy;
 
@@ -31,7 +33,14 @@ public static class DependencyInjection
         services.AddMultiTenant<MultiTenantInfo>()
            .WithHeaderStrategy("tenant")
            .WithQueryStringStrategy("tenant")
-           .WithEFCoreStore<TenantDbContext, MultiTenantInfo>();
+           .WithEFCoreStore<TenantDbContext, MultiTenantInfo>()
+           .WithRemoteAuthenticationCallbackStrategy()
+           .WithPerTenantOptions<JwtBearerOptions>((options, tenant) =>
+           {
+               options.Authority = $"https://localhost:5001/{tenant.Identifier}/";
+
+               options.TokenValidationParameters.ValidateAudience = false;
+           });
 
         return services;
     }

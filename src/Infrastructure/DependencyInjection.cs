@@ -32,11 +32,10 @@ public static class DependencyInjection
     {
         return builder
             .UseHttpsRedirection()
-            .UseAuthentication()
             .UseMultiTenancy()
+            .UseAuthentication()
             .UseAuthorization()
             .UseOpenApiDocumentation();
-        ;
     }
 
     public static IServiceCollection AddIdentityServerInfrastructure(this IServiceCollection services, IConfiguration config)
