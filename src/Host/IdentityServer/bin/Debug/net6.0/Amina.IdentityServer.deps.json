@@ -9,10 +9,6 @@
       "Amina.IdentityServer/1.0.0": {
         "dependencies": {
           "Amina.Infrastructure": "1.0.0",
-          "Duende.IdentityServer.AspNetIdentity": "6.1.0",
-          "Microsoft.AspNetCore.Authentication.Google": "6.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.0",
           "Migrators.PostgreSQL": "1.0.0",
           "Serilog.AspNetCore": "4.1.0"
         },
@@ -1067,7 +1063,9 @@
           "Duende.IdentityServer.AspNetIdentity": "6.1.0",
           "Finbuckle.MultiTenant.AspNetCore": "6.9.0",
           "Finbuckle.MultiTenant.EntityFrameworkCore": "6.9.0",
+          "Microsoft.AspNetCore.Authentication.Google": "6.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.UI": "6.0.10",

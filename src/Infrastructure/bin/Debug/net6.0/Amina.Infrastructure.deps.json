@@ -12,7 +12,9 @@
           "Duende.IdentityServer.AspNetIdentity": "6.1.0",
           "Finbuckle.MultiTenant.AspNetCore": "6.9.0",
           "Finbuckle.MultiTenant.EntityFrameworkCore": "6.9.0",
+          "Microsoft.AspNetCore.Authentication.Google": "6.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.10",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.UI": "6.0.10",
@@ -121,6 +123,14 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.10": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.10.0"
@@ -163,6 +173,17 @@
         }
       },
       "Microsoft.AspNetCore.DataProtection.Abstractions/6.0.0": {},
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.10"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
@@ -1138,6 +1159,13 @@
       "path": "identitymodel/6.0.0",
       "hashPath": "identitymodel.6.0.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.Google/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TToorF3zDoDSDj639jqD0JkrjQaAfK1vI61Xwrtnf2gToIQQSRAY7A6S4qPYROE6n31sEyWKPlAVoSW1u7Jysw==",
+      "path": "microsoft.aspnetcore.authentication.google/6.0.0",
+      "hashPath": "microsoft.aspnetcore.authentication.google.6.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.10": {
       "type": "package",
       "serviceable": true,
@@ -1172,6 +1200,13 @@
       "sha512": "sha512-Z/UU4NEBm5UgNufJmw+j5baW26ytCOIZ0G7sZocPaOzsUeBon1bkM3lSMNZQG2GmDjAIVP2XMSODf2jzSGbibw==",
       "path": "microsoft.aspnetcore.dataprotection.abstractions/6.0.0",
       "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1mnjZaEH9LWfbuCfYYil64TZ6G/hnODd+WKBjEbQx5/SPjypj+2LzQ43M09JXWyRvPpjiefl/wxV0q/ACqZLRw==",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.0",
+      "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",

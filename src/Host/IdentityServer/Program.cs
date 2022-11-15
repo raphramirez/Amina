@@ -2,6 +2,7 @@ using Amina.IdentityServer;
 using Serilog;
 using Microsoft.EntityFrameworkCore;
 using Amina.Infrastructure.Persistence;
+using Amina.Infrastructure;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -18,11 +19,15 @@ try
         .Enrich.FromLogContext()
         .ReadFrom.Configuration(ctx.Configuration));
 
-    var app = builder
-        .ConfigureServices()
-        .ConfigurePipeline();
+    builder.Services.AddIdentityServerInfrastructure(builder.Configuration);
+
+    var app = builder.Build();
 
     await app.Services.InitializeDatabasesAsync();
+
+    app.UseIdentityServerInfrastructure(builder.Configuration, builder.Environment);
+
+    app.MapIdentityServerEndpoints();
 
     app.Run();
 }

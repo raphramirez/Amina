@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E3foPWgmXFrQ6Ig1HmGP/U4SJjN6LQvv9mEIJUV2S+VnX7Ltm2NOkc1+rJtqWeIAlJ+GoM2+smSfApOvNnUvbQ==",
+  "dgSpecHash": "aIlh0lS8O0DUkke0yNQFUuQurxmuWCJUOB15szGHNcfCeOskMDniI1tlT5/6uh/qOl3fzvlOA3U7MQoiaRytAw==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -12,11 +12,13 @@
     "C:\\Users\\ramir\\.nuget\\packages\\finbuckle.multitenant.entityframeworkcore\\6.9.0\\finbuckle.multitenant.entityframeworkcore.6.9.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.0\\microsoft.aspnetcore.authentication.google.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.0\\microsoft.aspnetcore.authentication.openidconnect.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\6.0.0\\microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.0\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.10.nupkg.sha512",
