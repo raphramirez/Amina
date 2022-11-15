@@ -1,4 +1,5 @@
-﻿using Finbuckle.MultiTenant;
+﻿using Amina.Infrastructure.Multitenancy;
+using Finbuckle.MultiTenant;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,11 +9,13 @@ namespace Amina.Infrastructure.Persistence.Context;
 
 public class ApplicationDbContext : BaseDbContext
 {
+    private readonly MultiTenantInfo _tenantInfo;
     private readonly IConfiguration _configuration;
     private readonly IWebHostEnvironment _env;
 
-    public ApplicationDbContext(ITenantInfo tenantInfo, IConfiguration configuration, IWebHostEnvironment env) : base(tenantInfo)
+    public ApplicationDbContext(MultiTenantInfo tenantInfo, IConfiguration configuration, IWebHostEnvironment env) : base(tenantInfo)
     {
+        _tenantInfo = tenantInfo;
         _configuration = configuration;
         _env = env;
     }
@@ -20,16 +23,19 @@ public class ApplicationDbContext : BaseDbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         string connectionString;
-        if (TenantInfo is null && _env.IsDevelopment())
+        if (_tenantInfo is null && _env.IsDevelopment())
         {
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
         else
         {
-            connectionString = TenantInfo.ConnectionString;
+            connectionString = _tenantInfo.ApplicationConnectionString;
         }
 
-        optionsBuilder.UseNpgsql(connectionString);
+        if (!string.IsNullOrWhiteSpace(connectionString))
+        {
+            optionsBuilder.UseDatabase(connectionString);
+        }
 
         base.OnConfiguring(optionsBuilder);
     }

@@ -1,4 +1,5 @@
-﻿using Finbuckle.MultiTenant;
+﻿using Amina.Infrastructure.Multitenancy;
+using Finbuckle.MultiTenant;
 using Finbuckle.MultiTenant.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

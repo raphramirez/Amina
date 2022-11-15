@@ -21,7 +21,7 @@ public static class DependencyInjection
     {
         return services
             .AddPersistence(config)
-            .AddIdentity()
+            .AddApplicationDatabase()
             .AddAuthentications()
             .AddAuthorizations()
             .AddWebApiMultitenancy()
@@ -43,6 +43,7 @@ public static class DependencyInjection
     {
         return services
                 .AddPersistence(config)
+                .AddIdentityDatabase()
                 .AddIdentity()
                 .AddDuendeIdentityServer()
                 .AddExternalAuthentication()

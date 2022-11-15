@@ -21,11 +21,28 @@ public static class DependencyInjection
         services.AddDbContext<TenantDbContext>(m =>
             m.UseDatabase(tenantAdminConnectionString));
 
+        return services;
+    }
+
+    public static IServiceCollection AddIdentityDatabase(this IServiceCollection services)
+    {
         services.AddDbContext<IdentityDbContext>();
 
-        services.AddTransient<IDatabaseInitializer, DatabaseInitializer>()
-            .AddTransient<IdentityDbInitializer>()
-            .AddTransient<IdentityDbSeeder>()
+        services.AddTransient<IDatabaseInitializer, IdentityDatabaseInitializer>()
+           .AddTransient<IdentityDbInitializer>()
+           .AddTransient<IdentityDbSeeder>()
+           .AddTransient<CustomSeederRunner>();
+
+        return services;
+    }
+
+    public static IServiceCollection AddApplicationDatabase(this IServiceCollection services)
+    {
+        services.AddDbContext<ApplicationDbContext>();
+
+        services.AddTransient<IDatabaseInitializer, ApplicationDatabaseInitializer>()
+            .AddTransient<ApplicationDbInitializer>()
+            .AddTransient<ApplicationDbSeeder>()
             .AddTransient<CustomSeederRunner>();
 
         return services;
