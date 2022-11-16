@@ -1,4 +1,4 @@
-﻿using Amina.IdentityServer.Multitenancy;
+﻿using Amina.Infrastructure.Multitenancy;
 using Finbuckle.MultiTenant;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
