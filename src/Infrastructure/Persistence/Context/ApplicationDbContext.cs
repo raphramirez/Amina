@@ -1,5 +1,6 @@
-﻿using Amina.Infrastructure.Multitenancy;
-using Finbuckle.MultiTenant;
+﻿using Amina.Domain.Project;
+using Amina.Infrastructure.Multitenancy;
+using Amina.Infrastructure.Persistence.TypeConfigurations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,11 +14,23 @@ public class ApplicationDbContext : BaseDbContext
     private readonly IConfiguration _configuration;
     private readonly IWebHostEnvironment _env;
 
-    public ApplicationDbContext(MultiTenantInfo tenantInfo, IConfiguration configuration, IWebHostEnvironment env) : base(tenantInfo)
+    public ApplicationDbContext(
+        MultiTenantInfo tenantInfo,
+        IConfiguration configuration,
+        IWebHostEnvironment env) : base(tenantInfo)
     {
         _tenantInfo = tenantInfo;
         _configuration = configuration;
         _env = env;
+    }
+
+    public DbSet<Project> Projects => Set<Project>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.ApplyConfiguration(new ProjectEntityTypeConfiguration());
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
