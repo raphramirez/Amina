@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Amina.WebAPI.Controllers;
 
-[Authorize]
 [Route("[controller]")]
-public class IdentityController : ControllerBase
+public class IdentityController : ApiController
 {
     [HttpGet]
     public IActionResult Get()
