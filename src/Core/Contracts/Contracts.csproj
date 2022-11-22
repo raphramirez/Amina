@@ -5,4 +5,8 @@
 	<AssemblyName>Amina.Contracts</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
 </Project>

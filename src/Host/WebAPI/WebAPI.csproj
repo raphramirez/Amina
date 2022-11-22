@@ -3,6 +3,9 @@
 		<RootNamespace>Amina.WebAPI</RootNamespace>
 		<AssemblyName>Amina.WebAPI</AssemblyName>
 	</PropertyGroup>
+	<ItemGroup>
+	  <AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="ErrorOr" Version="1.2.0" />

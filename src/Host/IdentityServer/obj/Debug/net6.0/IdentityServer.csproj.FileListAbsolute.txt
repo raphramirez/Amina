@@ -1,3 +1,11 @@
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.AssemblyReference.cache
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfoInputs.cache
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfo.cs
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.CoreCompileInputs.cache
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.RazorAssemblyInfo.cache
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.RazorAssemblyInfo.cs
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\appsettings.json
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-7E8122036B89C2F1B1194CC807BA1678.json
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-EB08FCF4C5E7C544A171E913C11AADD7.json
@@ -13,6 +21,7 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Duende.IdentityS
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Finbuckle.MultiTenant.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Finbuckle.MultiTenant.AspNetCore.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Finbuckle.MultiTenant.EntityFrameworkCore.dll
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Humanizer.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\IdentityModel.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -25,6 +34,7 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.AspNet
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
@@ -64,15 +74,7 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Migrators.Postgr
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Application.pdb
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Domain.pdb
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Shared.pdb
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.AssemblyReference.cache
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfoInputs.cache
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.AssemblyInfo.cs
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.csproj.CoreCompileInputs.cache
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.RazorAssemblyInfo.cache
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.RazorAssemblyInfo.cs
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.Amina.IdentityServer.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.Amina.IdentityServer.props
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Amina.IdentityServer.props
@@ -89,5 +91,4 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\refint\Amina.Ide
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.pdb
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\IdentityServer.genruntimeconfig.cache
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\ref\Amina.IdentityServer.dll
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Humanizer.dll
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\.xml

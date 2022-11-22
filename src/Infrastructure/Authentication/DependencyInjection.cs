@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
-using Serilog;
 
 namespace Amina.Infrastructure.Authentication;
 
@@ -10,8 +7,10 @@ internal static class DependencyInjection
 {
     internal static IServiceCollection AddAuthentications(this IServiceCollection services)
     {
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, null);
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
 
         return services;
     }

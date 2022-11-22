@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+namespace Amina.WebApplication1.Pages;
+
 using System.Net.Http.Headers;
 using System.Text.Json;
-
-namespace Amina.WebApplication1.Pages;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 public class CallApiModel : PageModel
 {

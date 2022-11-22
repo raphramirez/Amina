@@ -25,6 +25,8 @@ internal class ApplicationDbSeeder
 
     private async Task SeedDefaultData()
     {
+        await Task.CompletedTask;
+
         Log.Information("Seeding Default Data for '{tenantId}' Tenant.", _currentTenant.Id);
     }
 }

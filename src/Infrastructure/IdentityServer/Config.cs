@@ -17,7 +17,7 @@ public static class Config
         {
             new ApiScope("scope1"),
             new ApiScope("scope2"),
-            new ApiScope("amina_api", "Amina API")
+            new ApiScope("amina_api", "Amina API"),
         };
 
     public static IEnumerable<Client> Clients =>
@@ -32,7 +32,7 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                AllowedScopes = { "scope1" }
+                AllowedScopes = { "scope1" },
             },
 
             // interactive client using code flow + pkce
@@ -48,8 +48,9 @@ public static class Config
                 PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
-                AllowedScopes = { "openid", "profile", "scope2" }
+                AllowedScopes = { "openid", "profile", "scope2" },
             },
+
             // interactive ASP.NET Core Web App
             new Client
             {
@@ -71,7 +72,7 @@ public static class Config
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                     "amina_api",
-                }
-            }
+                },
+            },
         };
 }

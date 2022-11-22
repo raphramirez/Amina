@@ -15,7 +15,7 @@ namespace Migrators.PostgreSQL.Migrations.Tenant
                     Id = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                     Identifier = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    ConnectionString = table.Column<string>(type: "text", nullable: false)
+                    ConnectionString = table.Column<string>(type: "text", nullable: false),
                 },
                 constraints: table =>
                 {

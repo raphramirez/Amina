@@ -13,7 +13,7 @@ namespace Migrators.PostgreSQL.Migrations.Tenant
                 table: "TenantInfo",
                 type: "text",
                 nullable: false,
-                defaultValue: "");
+                defaultValue: string.Empty);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -1,10 +1,10 @@
-﻿using Amina.WebAPI.Common.Http;
+﻿using System.Diagnostics;
+using Amina.WebAPI.Common.Http;
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
-using System.Diagnostics;
 
 namespace Amina.WebAPI.Common.Errors;
 
