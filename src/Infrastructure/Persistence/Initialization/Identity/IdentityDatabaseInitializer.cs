@@ -41,7 +41,7 @@ internal class IdentityDatabaseInitializer : IDatabaseInitializer
         _serviceProvider.GetRequiredService<IMultiTenantContextAccessor>()
             .MultiTenantContext = new MultiTenantContext<MultiTenantInfo>()
             {
-                TenantInfo = tenant
+                TenantInfo = tenant,
             };
 
         // Then run the initialization in the new scope

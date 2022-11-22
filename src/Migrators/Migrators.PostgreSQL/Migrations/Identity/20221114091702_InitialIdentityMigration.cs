@@ -18,7 +18,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                     Name = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
+                    ConcurrencyStamp = table.Column<string>(type: "text", nullable: true),
                 },
                 constraints: table =>
                 {
@@ -44,7 +44,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     TwoFactorEnabled = table.Column<bool>(type: "boolean", nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: true),
                     LockoutEnabled = table.Column<bool>(type: "boolean", nullable: false),
-                    AccessFailedCount = table.Column<int>(type: "integer", nullable: false)
+                    AccessFailedCount = table.Column<int>(type: "integer", nullable: false),
                 },
                 constraints: table =>
                 {
@@ -60,7 +60,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     RoleId = table.Column<string>(type: "text", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true),
-                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                 },
                 constraints: table =>
                 {
@@ -82,7 +82,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     UserId = table.Column<string>(type: "text", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true),
-                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                 },
                 constraints: table =>
                 {
@@ -104,7 +104,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     ProviderKey = table.Column<string>(type: "character varying(128)", maxLength: 128, nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "text", nullable: true),
                     UserId = table.Column<string>(type: "text", nullable: false),
-                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                 },
                 constraints: table =>
                 {
@@ -123,7 +123,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                 {
                     UserId = table.Column<string>(type: "text", nullable: false),
                     RoleId = table.Column<string>(type: "text", nullable: false),
-                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                 },
                 constraints: table =>
                 {
@@ -150,7 +150,7 @@ namespace Migrators.PostgreSQL.Migrations.Identity
                     LoginProvider = table.Column<string>(type: "character varying(128)", maxLength: 128, nullable: false),
                     Name = table.Column<string>(type: "character varying(128)", maxLength: 128, nullable: false),
                     Value = table.Column<string>(type: "text", nullable: true),
-                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false)
+                    TenantId = table.Column<string>(type: "character varying(64)", maxLength: 64, nullable: false),
                 },
                 constraints: table =>
                 {

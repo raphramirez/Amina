@@ -19,3 +19,4 @@ D:\Git\s2dioapps\Amina\src\Infrastructure\obj\Debug\net6.0\refint\Amina.Infrastr
 D:\Git\s2dioapps\Amina\src\Infrastructure\obj\Debug\net6.0\Amina.Infrastructure.pdb
 D:\Git\s2dioapps\Amina\src\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 D:\Git\s2dioapps\Amina\src\Infrastructure\obj\Debug\net6.0\ref\Amina.Infrastructure.dll
+D:\Git\s2dioapps\Amina\src\Infrastructure\bin\Debug\net6.0\.xml

@@ -15,3 +15,4 @@ D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\Amina.Application.d
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\refint\Amina.Application.dll
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\Amina.Application.pdb
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\ref\Amina.Application.dll
+D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\.xml

@@ -13,7 +13,8 @@ public class IdentityDbContext : MultiTenantIdentityDbContext<ApplicationUser>
     private readonly IWebHostEnvironment _env;
     private readonly IConfiguration _configuration;
 
-    public IdentityDbContext(ITenantInfo tenantInfo, DbContextOptions<IdentityDbContext> options, IConfiguration configuration, IWebHostEnvironment env) : base(tenantInfo, options)
+    public IdentityDbContext(ITenantInfo tenantInfo, DbContextOptions<IdentityDbContext> options, IConfiguration configuration, IWebHostEnvironment env)
+        : base(tenantInfo, options)
     {
         _configuration = configuration;
         _env = env;
@@ -23,7 +24,7 @@ public class IdentityDbContext : MultiTenantIdentityDbContext<ApplicationUser>
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string connectionString;
+        string? connectionString;
 
         if (_tenant is null && _env.IsDevelopment())
         {
@@ -31,7 +32,7 @@ public class IdentityDbContext : MultiTenantIdentityDbContext<ApplicationUser>
         }
         else
         {
-            connectionString = _tenant.ConnectionString;
+            connectionString = _tenant!.ConnectionString;
         }
 
         if (!string.IsNullOrWhiteSpace(connectionString))

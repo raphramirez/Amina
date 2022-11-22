@@ -10,3 +10,4 @@ D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Amina.Shared.dll
 D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\refint\Amina.Shared.dll
 D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\Amina.Shared.pdb
 D:\Git\s2dioapps\Amina\src\Core\Shared\obj\Debug\net6.0\ref\Amina.Shared.dll
+D:\Git\s2dioapps\Amina\src\Core\Shared\bin\Debug\net6.0\.xml

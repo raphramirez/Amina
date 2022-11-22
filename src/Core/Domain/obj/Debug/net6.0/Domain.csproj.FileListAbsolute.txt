@@ -13,3 +13,4 @@ D:\Git\s2dioapps\Amina\src\Core\Domain\obj\Debug\net6.0\Amina.Domain.dll
 D:\Git\s2dioapps\Amina\src\Core\Domain\obj\Debug\net6.0\refint\Amina.Domain.dll
 D:\Git\s2dioapps\Amina\src\Core\Domain\obj\Debug\net6.0\Amina.Domain.pdb
 D:\Git\s2dioapps\Amina\src\Core\Domain\obj\Debug\net6.0\ref\Amina.Domain.dll
+D:\Git\s2dioapps\Amina\src\Core\Domain\bin\Debug\net6.0\.xml

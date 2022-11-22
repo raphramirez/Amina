@@ -41,7 +41,7 @@ internal class TenantDbInitializer
             Name = "Root",
             Identifier = "root",
             ConnectionString = _config.GetConnectionString("DefaultConnection"),
-            ApplicationConnectionString = _config.GetConnectionString("DefaultApplicationConnection")
+            ApplicationConnectionString = _config.GetConnectionString("DefaultApplicationConnection"),
         };
         _tenantDbContext.TenantInfo.Add(rootTenant);
 

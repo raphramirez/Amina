@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Amina.WebApplication1/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "6.0.10"
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "6.0.10",
+          "StyleCop.Analyzers": "1.1.118"
         },
         "runtime": {
           "Amina.WebApplication1.dll": {}
@@ -82,6 +83,7 @@
           }
         }
       },
+      "StyleCop.Analyzers/1.1.118": {},
       "System.IdentityModel.Tokens.Jwt/6.10.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.10.0",
@@ -151,6 +153,13 @@
       "sha512": "sha512-qbf1NslutDB4oLrriYTJpy7oB1pbh2ej2lEHd2IPDQH9C74ysOdhU5wAC7KoXblldbo7YsNR2QYFOqQM/b0Rsg==",
       "path": "microsoft.identitymodel.tokens/6.10.0",
       "hashPath": "microsoft.identitymodel.tokens.6.10.0.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/6.10.0": {
       "type": "package",

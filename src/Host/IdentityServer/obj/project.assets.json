@@ -1163,6 +1163,9 @@
           }
         }
       },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -1930,7 +1933,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amina.Domain": "1.0.0",
-          "Amina.Shared": "1.0.0"
+          "Amina.Shared": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "compile": {
           "bin/placeholder/Amina.Application.dll": {}
@@ -3408,6 +3413,31 @@
         "lib/netstandard2.0/Serilog.Sinks.File.xml",
         "serilog.sinks.file.4.1.0.nupkg.sha512",
         "serilog.sinks.file.nuspec"
+      ]
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "type": "package",
+      "path": "stylecop.analyzers/1.1.118",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "stylecop.analyzers.1.1.118.nupkg.sha512",
+        "stylecop.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Swashbuckle.AspNetCore/6.2.3": {
@@ -5891,7 +5921,8 @@
       "Amina.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.11",
       "Migrators.PostgreSQL >= 1.0.0",
-      "Serilog.AspNetCore >= 4.1.0"
+      "Serilog.AspNetCore >= 4.1.0",
+      "StyleCop.Analyzers >= 1.1.118"
     ]
   },
   "packageFolders": {
@@ -5949,6 +5980,12 @@
           "Serilog.AspNetCore": {
             "target": "Package",
             "version": "[4.1.0, )"
+          },
+          "StyleCop.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.118, )"
           }
         },
         "imports": [

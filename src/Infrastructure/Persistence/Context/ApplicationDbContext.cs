@@ -17,7 +17,8 @@ public class ApplicationDbContext : BaseDbContext
     public ApplicationDbContext(
         MultiTenantInfo tenantInfo,
         IConfiguration configuration,
-        IWebHostEnvironment env) : base(tenantInfo)
+        IWebHostEnvironment env)
+        : base(tenantInfo)
     {
         _tenantInfo = tenantInfo;
         _configuration = configuration;
@@ -35,12 +36,13 @@ public class ApplicationDbContext : BaseDbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string connectionString;
+        string connectionString = string.Empty;
+
         if (_tenantInfo is null && _env.IsDevelopment())
         {
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
-        else
+        else if (_tenantInfo is not null && _tenantInfo.ApplicationConnectionString is not null)
         {
             connectionString = _tenantInfo.ApplicationConnectionString;
         }

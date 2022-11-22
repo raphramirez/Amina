@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V/Mk3cXfBO3UvnVkfw6YRDeVZERhbOaVaME3KP07voRAuxuQSUlw+lA7hznSdOAZgTpgfhNCi+/AFw9Vkc4QUQ==",
+  "dgSpecHash": "kkOiqUXvJ+UGRC1mPkGAdYs8UTdNx/zW3y9oSO9mhRYtnuf7PpCPT4P5vg67ttSAhPJzlfW4eBp8Oj4b1nlbig==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],

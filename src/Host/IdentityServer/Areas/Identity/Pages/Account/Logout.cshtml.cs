@@ -22,7 +22,7 @@ namespace Amina.IdentityServer.Areas.Identity.Pages.Account
         {
         }
 
-        public async Task<IActionResult> OnPost(string returnUrl = null)
+        public async Task<IActionResult> OnPost(string? returnUrl = null)
         {
             await _signInManager.SignOutAsync();
 
@@ -30,7 +30,7 @@ namespace Amina.IdentityServer.Areas.Identity.Pages.Account
 
             Response.Cookies.Delete(".AspNetCore.Identity.Application", new CookieOptions()
             {
-                Path = "/eds-daas"
+                Path = "/eds-daas",
             });
 
             if (returnUrl != null)

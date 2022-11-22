@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aIlh0lS8O0DUkke0yNQFUuQurxmuWCJUOB15szGHNcfCeOskMDniI1tlT5/6uh/qOl3fzvlOA3U7MQoiaRytAw==",
+  "dgSpecHash": "Ft+mMJv7xGAV6YIqYdsQq0Dy6k3OMjZ7pelHcIpBXAEYiwV9KA4u7NC8YBPF7nmzwxaUZwvlGhz5MxOrYPsh+g==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -71,6 +71,7 @@
     "C:\\Users\\ramir\\.nuget\\packages\\serilog.sinks.console\\3.1.1\\serilog.sinks.console.3.1.1.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\serilog.sinks.file\\4.1.0\\serilog.sinks.file.4.1.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

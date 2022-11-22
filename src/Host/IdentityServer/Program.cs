@@ -1,6 +1,6 @@
-using Serilog;
-using Amina.Infrastructure.Persistence;
 using Amina.Infrastructure;
+using Amina.Infrastructure.Persistence;
+using Serilog;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -29,7 +29,7 @@ try
 
     app.Run();
 }
-catch (Exception ex) when (ex.GetType().Name is not "StopTheHostException") // https://github.com/dotnet/runtime/issues/60600
+catch (Exception ex) when (ex.GetType().Name is not "StopTheHostException")
 {
     Log.Fatal(ex, "Unhandled exception");
 }

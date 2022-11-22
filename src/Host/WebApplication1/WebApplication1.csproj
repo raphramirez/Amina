@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-	  <RootNamespace>Amina.WebApplication1</RootNamespace>
-	  <AssemblyName>Amina.WebApplication1</AssemblyName>
+	<RootNamespace>Amina.WebApplication1</RootNamespace>
+	<AssemblyName>Amina.WebApplication1</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.10" />

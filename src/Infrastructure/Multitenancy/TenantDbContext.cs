@@ -5,7 +5,8 @@ namespace Amina.Infrastructure.Multitenancy;
 
 public class TenantDbContext : EFCoreStoreDbContext<MultiTenantInfo>
 {
-    public TenantDbContext(DbContextOptions<TenantDbContext> options) : base(options)
+    public TenantDbContext(DbContextOptions<TenantDbContext> options)
+        : base(options)
     {
     }
 }
