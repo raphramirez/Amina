@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3EC964C-141B-49C2-90A5-0E92C107ECCF}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7B46A747-164B-4EDF-9512-3DA16212D184}"
 EndProject
@@ -27,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrators", "Migrators", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrators.PostgreSQL", "src\Migrators\Migrators.PostgreSQL\Migrators.PostgreSQL.csproj", "{B965DEA3-C93B-4D16-B29A-CD50C886616E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Core\Contracts\Contracts.csproj", "{2CC8882D-5091-4C4F-9F07-7753B5025479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\Core\Contracts\Contracts.csproj", "{2CC8882D-5091-4C4F-9F07-7753B5025479}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{4F8C8A38-106B-46D6-8893-D135FCB2688D}"
 	ProjectSection(SolutionItems) = preProject
