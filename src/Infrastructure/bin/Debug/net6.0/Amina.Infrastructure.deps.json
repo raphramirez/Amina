@@ -65,6 +65,14 @@
           }
         }
       },
+      "ErrorOr/1.2.0": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
       "Finbuckle.MultiTenant/6.9.0": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
@@ -1168,7 +1176,8 @@
       },
       "Amina.Domain/1.0.0": {
         "dependencies": {
-          "Amina.Shared": "1.0.0"
+          "Amina.Shared": "1.0.0",
+          "ErrorOr": "1.2.0"
         },
         "runtime": {
           "Amina.Domain.dll": {}
@@ -1207,6 +1216,13 @@
       "sha512": "sha512-f+COrpAPosMNpGo1aGyI2ZCOu453pr/fdlx3MTyuPT+mNcJwEwmqQl9Ncg0Iiu/RQSjIh4Kl64T3y1sX79hZjA==",
       "path": "duende.identityserver.storage/6.1.0",
       "hashPath": "duende.identityserver.storage.6.1.0.nupkg.sha512"
+    },
+    "ErrorOr/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DgBtL5FjqiErLIuYng7EfTc/4ixcQEB8h4t73Mt+JVmur84iBPtoooLnzw1AZ/h3s2yzACbUHOg+P7+Bj5WfyA==",
+      "path": "erroror/1.2.0",
+      "hashPath": "erroror.1.2.0.nupkg.sha512"
     },
     "Finbuckle.MultiTenant/6.9.0": {
       "type": "package",

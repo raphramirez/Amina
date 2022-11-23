@@ -10,5 +10,8 @@ public class ProjectsMappingConfig : IRegister
     {
         config.NewConfig<Project, ProjectResponse>()
             .Map(dest => dest.Id, src => src.Id.Value);
+
+        config.NewConfig<Project, CreateProjectResponse>()
+            .Map(dest => dest.Id, src => src.Id.Value);
     }
 }

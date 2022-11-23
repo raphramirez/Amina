@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iiNhhl8/9wNJh4GIXl69h50G9mXU7JqAwuHsLPPCy9Ksn/3gPAa2fDksPIhYjOVf3Q1UmeR5L/ps+QkzVWJm0w==",
+  "dgSpecHash": "o8zkS+DXUkBbQU4Yf76mfMeei6erzo+Yf6Ds0l/tcCY3BCXj1KCy03LvZZ5pzDwbZMOeTLVmAp2aGV41u47rMw==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ramir\\.nuget\\packages\\erroror\\1.2.0\\erroror.1.2.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": []

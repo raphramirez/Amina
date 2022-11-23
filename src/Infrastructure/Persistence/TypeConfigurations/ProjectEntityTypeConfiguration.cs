@@ -6,13 +6,18 @@ using Newtonsoft.Json;
 
 namespace Amina.Infrastructure.Persistence.TypeConfigurations;
 
-internal class ProjectEntityTypeConfiguration : IEntityTypeConfiguration<Project>
+public class ProjectEntityTypeConfiguration : IEntityTypeConfiguration<Project>
 {
     public void Configure(EntityTypeBuilder<Project> builder)
     {
+        JsonSerializerSettings settings = new JsonSerializerSettings
+        {
+            ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor,
+        };
+
         builder.Property(e => e.Id)
             .HasConversion(
-                v => JsonConvert.SerializeObject(v),
-                v => JsonConvert.DeserializeObject<ProjectId>(v));
+                    v => JsonConvert.SerializeObject(v, settings),
+                    v => JsonConvert.DeserializeObject<ProjectId>(v, settings));
     }
 }

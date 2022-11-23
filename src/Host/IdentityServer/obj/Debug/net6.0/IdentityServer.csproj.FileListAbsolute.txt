@@ -74,7 +74,6 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Migrators.Postgr
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Application.pdb
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Domain.pdb
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Shared.pdb
-D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\Amina.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.Amina.IdentityServer.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.Amina.IdentityServer.props
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Amina.IdentityServer.props
@@ -101,3 +100,4 @@ D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Microsoft.Bcl.As
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\System.Linq.Async.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Contracts.dll
 D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\Amina.Contracts.pdb
+D:\Git\s2dioapps\Amina\src\Host\IdentityServer\bin\Debug\net6.0\ErrorOr.dll

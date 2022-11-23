@@ -1,24 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<RootNamespace>Amina.Domain</RootNamespace>
-	<AssemblyName>Amina.Domain</AssemblyName>
-  </PropertyGroup>
+	<PropertyGroup>
+		<RootNamespace>Amina.Domain</RootNamespace>
+		<AssemblyName>Amina.Domain</AssemblyName>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="ErrorOr" Version="1.2.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\Shared.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Common\ValueObjects\" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Shared\Shared.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
 
 </Project>

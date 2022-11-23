@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tkL5RfVfzP4U5fluQdL22sdgngBfui4bwFP0CxZzG4qT9FRGhmF6NDmP/UNabVZT2/feMOPSiwkRGoB0j4vC0g==",
+  "dgSpecHash": "40NFYij3D5v0oZqUjRrug0IvKI+f7bunDfF+6Zep75ikIxNhRThgPdCAfvZvgKkLHNK2FrxrvqJLLc2Q2btBuA==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramir\\.nuget\\packages\\duende.identityserver\\6.1.0\\duende.identityserver.6.1.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\duende.identityserver.aspnetidentity\\6.1.0\\duende.identityserver.aspnetidentity.6.1.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\duende.identityserver.storage\\6.1.0\\duende.identityserver.storage.6.1.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\erroror\\1.2.0\\erroror.1.2.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\finbuckle.multitenant\\6.9.0\\finbuckle.multitenant.6.9.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\finbuckle.multitenant.aspnetcore\\6.9.0\\finbuckle.multitenant.aspnetcore.6.9.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\finbuckle.multitenant.entityframeworkcore\\6.9.0\\finbuckle.multitenant.entityframeworkcore.6.9.0.nupkg.sha512",

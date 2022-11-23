@@ -22,6 +22,14 @@
           "Amina.Application.dll": {}
         }
       },
+      "ErrorOr/1.2.0": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
       "Mapster/7.3.0": {
         "dependencies": {
           "Mapster.Core": "1.2.0",
@@ -354,7 +362,8 @@
       },
       "Amina.Domain/1.0.0": {
         "dependencies": {
-          "Amina.Shared": "1.0.0"
+          "Amina.Shared": "1.0.0",
+          "ErrorOr": "1.2.0"
         },
         "runtime": {
           "Amina.Domain.dll": {}
@@ -372,6 +381,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ErrorOr/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DgBtL5FjqiErLIuYng7EfTc/4ixcQEB8h4t73Mt+JVmur84iBPtoooLnzw1AZ/h3s2yzACbUHOg+P7+Bj5WfyA==",
+      "path": "erroror/1.2.0",
+      "hashPath": "erroror.1.2.0.nupkg.sha512"
     },
     "Mapster/7.3.0": {
       "type": "package",

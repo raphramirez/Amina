@@ -1,10 +1,11 @@
-﻿using Amina.Domain.Common.Models;
+﻿using System.Text.Json.Serialization;
+using Amina.Domain.Common.Models;
 
 namespace Amina.Domain.Project.ValueObjects;
 
 public sealed class ProjectId : ValueObject
 {
-    private ProjectId(Guid value)
+    public ProjectId(Guid value)
     {
         Value = value;
     }

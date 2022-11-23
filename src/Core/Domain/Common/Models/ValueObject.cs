@@ -1,4 +1,6 @@
-﻿namespace Amina.Domain.Common.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace Amina.Domain.Common.Models;
 
 public abstract partial class ValueObject
 {

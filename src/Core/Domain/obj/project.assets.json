@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ErrorOr/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
       },
@@ -18,6 +31,22 @@
     }
   },
   "libraries": {
+    "ErrorOr/1.2.0": {
+      "sha512": "DgBtL5FjqiErLIuYng7EfTc/4ixcQEB8h4t73Mt+JVmur84iBPtoooLnzw1AZ/h3s2yzACbUHOg+P7+Bj5WfyA==",
+      "type": "package",
+      "path": "erroror/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "erroror.1.2.0.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml",
+        "lib/netstandard2.0/ErrorOr.dll",
+        "lib/netstandard2.0/ErrorOr.xml"
+      ]
+    },
     "StyleCop.Analyzers/1.1.118": {
       "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
       "type": "package",
@@ -52,6 +81,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Amina.Shared >= 1.0.0",
+      "ErrorOr >= 1.2.0",
       "StyleCop.Analyzers >= 1.1.118"
     ]
   },
@@ -98,6 +128,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "ErrorOr": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "StyleCop.Analyzers": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
