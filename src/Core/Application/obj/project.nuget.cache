@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yXuBGHcDPkguUc3QG2Ovr4HK/bkderIQcsI5xfRfJqJd6KBMXfP1QbpNT0AgGHNeajUS2ykOXWymILTJi7AcXA==",
+  "dgSpecHash": "5ENDZWHr7QgLv77YMR39Bnai2ntvEYQTHo9HwF/SyPPBzJs/9wBtNJ9+Jh2WXGt1ajmoyW/swHSrrG6AOAv6fQ==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Core\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ft+mMJv7xGAV6YIqYdsQq0Dy6k3OMjZ7pelHcIpBXAEYiwV9KA4u7NC8YBPF7nmzwxaUZwvlGhz5MxOrYPsh+g==",
+  "dgSpecHash": "0bL1k704FZpZhfibfqMu8j+/NtoiRzDxJbkC1g7wJlVLnN/iRi6Mf0u7ABnwFS05vld4DwZShTnbeyq3yFBloA==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,9 @@
     "C:\\Users\\ramir\\.nuget\\packages\\finbuckle.multitenant.entityframeworkcore\\6.9.0\\finbuckle.multitenant.entityframeworkcore.6.9.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.0\\microsoft.aspnetcore.authentication.google.6.0.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.0\\microsoft.aspnetcore.authentication.openidconnect.6.0.0.nupkg.sha512",
