@@ -1,9 +1,9 @@
-﻿using MediatR;
+﻿using Amina.Application.Projects.Queries.List;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Amina.WebAPI.Controllers;
 
-[Route("[controller]")]
 public class ProjectsController : ApiController
 {
     private readonly ISender _mediator;
@@ -16,8 +16,8 @@ public class ProjectsController : ApiController
     [HttpGet]
     public async Task<IActionResult> List()
     {
-        await Task.CompletedTask;
+        var result = await _mediator.Send(new ProjectsListQuery());
 
-        return Ok();
+        return Ok(result);
     }
 }

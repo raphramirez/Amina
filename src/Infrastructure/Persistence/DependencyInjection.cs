@@ -3,6 +3,7 @@ using Amina.Infrastructure.Persistence.Context;
 using Amina.Infrastructure.Persistence.Initialization;
 using Amina.Infrastructure.Persistence.Initialization.Application;
 using Amina.Infrastructure.Persistence.Initialization.Identity;
+using Amina.Infrastructure.Persistence.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -48,6 +49,8 @@ public static class DependencyInjection
             .AddTransient<TenantDbInitializer>()
             .AddTransient<ApplicationDbSeeder>()
             .AddTransient<CustomSeederRunner>();
+
+        services.AddRepositories();
 
         return services;
     }

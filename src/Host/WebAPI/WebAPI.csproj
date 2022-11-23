@@ -9,6 +9,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="ErrorOr" Version="1.2.0" />
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,9 +20,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Core\Application\Application.csproj" />
-	  <ProjectReference Include="..\..\Core\Contracts\Contracts.csproj" />
-	  <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj" />
-	  <ProjectReference Include="..\..\Migrators\Migrators.PostgreSQL\Migrators.PostgreSQL.csproj" />
+		<ProjectReference Include="..\..\Core\Contracts\Contracts.csproj" />
+		<ProjectReference Include="..\..\Core\Application\Application.csproj" />
+		<ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj" />
+		<ProjectReference Include="..\..\Migrators\Migrators.PostgreSQL\Migrators.PostgreSQL.csproj" />
 	</ItemGroup>
 </Project>
