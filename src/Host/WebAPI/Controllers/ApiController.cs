@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 namespace Amina.WebAPI.Controllers;
 
 [ApiController]
+[Route("[controller]")]
 [Authorize]
 public class ApiController : ControllerBase
 {

@@ -1,4 +1,5 @@
 ﻿using Amina.WebAPI.Common.Errors;
+using Amina.WebAPI.Common.Mapping;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace Amina.WebAPI;
@@ -10,6 +11,8 @@ public static class DependencyInjection
         services.AddControllers();
 
         services.AddSingleton<ProblemDetailsFactory, AminaProblemDetailsFactory>();
+
+        services.AddMappings();
 
         return services;
     }

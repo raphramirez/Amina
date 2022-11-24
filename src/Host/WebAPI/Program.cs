@@ -1,3 +1,4 @@
+using Amina.Application;
 using Amina.Infrastructure;
 using Amina.Infrastructure.Persistence;
 using Amina.WebAPI;
@@ -11,6 +12,7 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Services
     .AddPresentation()
+    .AddApplication()
     .AddWebApiInfrastructure(builder.Configuration);
 
 var app = builder.Build();

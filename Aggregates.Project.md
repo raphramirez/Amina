@@ -4,7 +4,7 @@
 # Domain Aggregates
 
 ## Project
-```
+```json
 {
   "id": { "value": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" },
   "name": "Amina Attendance",
