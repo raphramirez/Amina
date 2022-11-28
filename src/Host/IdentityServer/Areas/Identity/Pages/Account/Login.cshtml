@@ -9,7 +9,7 @@
 }
 
 <div class="h-100 d-flex justify-content-center align-items-center">
-    <div class="card pb-5">
+    <div class="card pb-5" id="card">
         <div class="card-header p-4">
             <h1>Welcome</h1>
             <p class="w-75">Sign in with your @Model.TenantInfo.Name account to continue.</p>
@@ -19,11 +19,11 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-row">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    <span asp-validation-for="Input.Email" class="text-danger mt-1"></span>
                 </div>
                 <div class="form-row mt-3">
                     <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    <span asp-validation-for="Input.Password" class="text-danger mt-1"></span>
                 </div>
                 <p class="text-right mt-3">
                     <a id="forgot-password" asp-page="./ForgotPassword">Forgot your Password?</a>
@@ -35,6 +35,12 @@
         </div>
     </div>
 </div>
+
+<style>
+    #card {
+        max-width: 405px;
+    }
+</style>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
