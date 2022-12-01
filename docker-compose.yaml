@@ -1,8 +1,20 @@
 version: '3'
 services:
   amina-postgres:
-   image: postgres
+   image: postgres:15.1
+   restart: always
    ports:
     - 5433:5432
    environment:
+    - POSTGRES_USER=postgres
     - POSTGRES_PASSWORD=admin
+  amina-identity-server:
+   build:
+    context: .
+    dockerfile: ./src/Host/IdentityServer/Dockerfile
+   container_name: "amina-identity-server"
+   ports:
+    - 5002:80
+   depends_on:
+    - amina-postgres
+   restart: on-failure

@@ -4,6 +4,8 @@
 	  <RootNamespace>Amina.IdentityServer</RootNamespace>
 	  <AssemblyName>Amina.IdentityServer</AssemblyName>
 	  <UserSecretsId>a926c09b-47af-4dce-a331-9e47a4c7ecf6</UserSecretsId>
+	  <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <DockerfileContext>..\..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
