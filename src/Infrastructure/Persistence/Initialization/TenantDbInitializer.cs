@@ -50,8 +50,8 @@ internal class TenantDbInitializer
             Id = "s2dioapps",
             Name = "Studio Apps",
             Identifier = "s2dioapps",
-            ConnectionString = "Server=localhost;Port=5432;Database=amina_identityServer_s2dioapps;User Id=postgres;Password=admin;",
-            ApplicationConnectionString = "Server=localhost;Port=5432;Database=amina_db_s2dioapps;User Id=postgres;Password=admin;",
+            ConnectionString = _config.GetConnectionString("Tenant_StudioApps"),
+            ApplicationConnectionString = _config.GetConnectionString("Tenant_StudioApps_ApplicationConnection"),
         };
         _tenantDbContext.TenantInfo.Add(sampleTenant1);
 

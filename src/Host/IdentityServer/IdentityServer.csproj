@@ -3,6 +3,7 @@
   <PropertyGroup>
 	  <RootNamespace>Amina.IdentityServer</RootNamespace>
 	  <AssemblyName>Amina.IdentityServer</AssemblyName>
+	  <UserSecretsId>a926c09b-47af-4dce-a331-9e47a4c7ecf6</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,7 @@
 	  <PrivateAssets>all</PrivateAssets>
 	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	</PackageReference>
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
 	<PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
   </ItemGroup>
 

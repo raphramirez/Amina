@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "40NFYij3D5v0oZqUjRrug0IvKI+f7bunDfF+6Zep75ikIxNhRThgPdCAfvZvgKkLHNK2FrxrvqJLLc2Q2btBuA==",
+  "dgSpecHash": "Y66yaE6+jZJXsn1Lhx1wKvkxSalISG4+WALtuWmR3+uyrBv44qID2TBBZAlFRo1S2YAytt8f2lzFAWvkKu5j1g==",
   "success": true,
   "projectFilePath": "D:\\Git\\s2dioapps\\Amina\\src\\Host\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,7 @@
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ramir\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.7\\npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",
