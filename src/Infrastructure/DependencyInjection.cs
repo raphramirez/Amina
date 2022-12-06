@@ -59,8 +59,8 @@ public static class DependencyInjection
             builder.UseDeveloperExceptionPage();
         }
 
+        // .UseHttpsRedirection() - removed for docker
         return builder
-            .UseHttpsRedirection()
             .UseStaticFiles()
             .UseMultiTenancy()
             .UseRouting()

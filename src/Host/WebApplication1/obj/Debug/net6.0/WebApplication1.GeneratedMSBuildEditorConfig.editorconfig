@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Amina.WebApplication1
 build_property.RootNamespace = Amina.WebApplication1
-build_property.ProjectDir = D:\Git\s2dioapps\Amina\src\Host\WebApplication1\
+build_property.ProjectDir = d:\Git\s2dioapps\Amina\src\Host\WebApplication1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Git\s2dioapps\Amina\src\Host\WebApplication1
+build_property.MSBuildProjectDirectory = d:\Git\s2dioapps\Amina\src\Host\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Git/s2dioapps/Amina/stylecop.json]
+[d:/Git/s2dioapps/Amina/stylecop.json]
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/CallApi.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/CallApi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEFwaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Error.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Index.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Privacy.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Signout.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Signout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/_ViewImports.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/_ViewStart.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Shared/_Layout.cshtml]
+[d:/Git/s2dioapps/Amina/src/Host/WebApplication1/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nlnpwep7dv

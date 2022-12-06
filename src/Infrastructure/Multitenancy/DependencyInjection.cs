@@ -23,6 +23,8 @@ public static class DependencyInjection
             {
                 o.Cookie.Name = $".Identity_{tenant.Identifier}";
                 o.LoginPath = "/Identity/Account/Login";
+
+                o.Cookie.SameSite = SameSiteMode.Lax;
             });
 
         return services;
@@ -37,7 +39,7 @@ public static class DependencyInjection
            .WithRemoteAuthenticationCallbackStrategy()
            .WithPerTenantOptions<JwtBearerOptions>((options, tenant) =>
            {
-               options.Authority = $"https://localhost:5001/{tenant.Identifier}/";
+               options.Authority = $"http://amina-identity-server:80/{tenant.Identifier}/";
 
                options.TokenValidationParameters.ValidateAudience = false;
            });

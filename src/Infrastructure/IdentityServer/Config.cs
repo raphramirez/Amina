@@ -30,10 +30,10 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
 
                 // where to redirect to after login
-                RedirectUris = { "https://localhost:5002/signin-oidc" },
+                RedirectUris = { "http://amina-identity-server:80/signin-oidc" },
 
                 // where to redirect to after logout
-                PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc" },
+                PostLogoutRedirectUris = { "http://amina-identity-server:80/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
 
