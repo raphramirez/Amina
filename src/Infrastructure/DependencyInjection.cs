@@ -1,5 +1,6 @@
 ﻿using Amina.Infrastructure.Authentication;
 using Amina.Infrastructure.Authorization;
+using Amina.Infrastructure.Cors;
 using Amina.Infrastructure.Identity;
 using Amina.Infrastructure.IdentityServer;
 using Amina.Infrastructure.Multitenancy;
@@ -41,6 +42,7 @@ public static class DependencyInjection
     public static IServiceCollection AddIdentityServerInfrastructure(this IServiceCollection services, IConfiguration config)
     {
         return services
+                .AddCorsPolicy()
                 .AddPersistence(config)
                 .AddIdentityDatabase()
                 .AddIdentity()
@@ -59,11 +61,12 @@ public static class DependencyInjection
             builder.UseDeveloperExceptionPage();
         }
 
-        // .UseHttpsRedirection() - removed for docker
+        // .UseHttpsRedirection() // Ommited for redirect problem
         return builder
             .UseStaticFiles()
             .UseMultiTenancy()
             .UseRouting()
+            .UseCorsPolicy()
             .UseIdentityServer()
             .UseAuthorization();
     }

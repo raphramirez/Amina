@@ -33,13 +33,14 @@ public static class Config
                 RedirectUris =
                 {
                     "http://amina-identity-server:80/signin-oidc",
-                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signin-oidc"
+                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signin-oidc",
                 },
+
                 // where to redirect to after logout
                 PostLogoutRedirectUris =
                 {
                     "http://amina-identity-server:80/signout-callback-oidc",
-                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signout-callback-oidc"
+                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signout-callback-oidc",
                 },
 
                 AllowOfflineAccess = true,
@@ -49,6 +50,10 @@ public static class Config
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                     "amina_api",
+                },
+
+                AllowedCorsOrigins = {
+                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io",
                 },
             },
         };

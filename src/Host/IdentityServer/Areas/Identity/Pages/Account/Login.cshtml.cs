@@ -30,7 +30,7 @@ namespace Amina.IdentityServer.Areas.Identity.Pages.Account
         public MultiTenantInfo? TenantInfo { get; private set; }
 
         [BindProperty]
-        public InputModel? Input { get; set; }
+        public InputModel Input { get; set; } = default!;
 
         public IList<AuthenticationScheme>? ExternalLogins { get; set; }
 
@@ -106,11 +106,11 @@ namespace Amina.IdentityServer.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
-            public string? Email { get; set; }
+            public string Email { get; set; } = string.Empty;
 
             [Required]
             [DataType(DataType.Password)]
-            public string? Password { get; set; }
+            public string Password { get; set; } = string.Empty;
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }

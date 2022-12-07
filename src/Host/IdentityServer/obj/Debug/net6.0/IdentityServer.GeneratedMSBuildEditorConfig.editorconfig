@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Amina.IdentityServer
 build_property.RootNamespace = Amina.IdentityServer
-build_property.ProjectDir = d:\Git\s2dioapps\Amina\src\Host\IdentityServer\
+build_property.ProjectDir = D:\Git\s2dioapps\Amina\src\Host\IdentityServer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\Git\s2dioapps\Amina\src\Host\IdentityServer
+build_property.MSBuildProjectDirectory = D:\Git\s2dioapps\Amina\src\Host\IdentityServer
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/Git/s2dioapps/Amina/stylecop.json]
+[D:/Git/s2dioapps/Amina/stylecop.json]
 build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Error.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Index.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Privacy.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Footer.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Header.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_LoginPartial.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/_ViewImports.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/_ViewStart.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Layout.cshtml]
+[D:/Git/s2dioapps/Amina/src/Host/IdentityServer/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g7jez75njs

@@ -34,9 +34,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC8D4562-FFB6-4E81-BEE4-82CD84A4956E}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		k8s\clean.sh = k8s\clean.sh
+		k8s\deploy.sh = k8s\deploy.sh
 		deployment.yaml = deployment.yaml
 		Directory.Build.props = Directory.Build.props
 		docker-compose.yaml = docker-compose.yaml
+		k8s\identity-server.yaml = k8s\identity-server.yaml
+		k8s\postgres.yaml = k8s\postgres.yaml
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject

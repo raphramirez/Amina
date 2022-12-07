@@ -1,8 +1,11 @@
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Application.deps.json
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Application.dll
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Application.pdb
+D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\.xml
+D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Contracts.dll
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Domain.dll
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Shared.dll
+D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Contracts.pdb
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Domain.pdb
 D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Shared.pdb
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
@@ -15,6 +18,3 @@ D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\Amina.Application.d
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\refint\Amina.Application.dll
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\Amina.Application.pdb
 D:\Git\s2dioapps\Amina\src\Core\Application\obj\Debug\net6.0\ref\Amina.Application.dll
-D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\.xml
-D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Contracts.dll
-D:\Git\s2dioapps\Amina\src\Core\Application\bin\Debug\net6.0\Amina.Contracts.pdb
