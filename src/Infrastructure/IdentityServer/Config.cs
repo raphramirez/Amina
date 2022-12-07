@@ -30,10 +30,17 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
 
                 // where to redirect to after login
-                RedirectUris = { "http://amina-identity-server:80/signin-oidc" },
-
+                RedirectUris =
+                {
+                    "http://amina-identity-server:80/signin-oidc",
+                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signin-oidc"
+                },
                 // where to redirect to after logout
-                PostLogoutRedirectUris = { "http://amina-identity-server:80/signout-callback-oidc" },
+                PostLogoutRedirectUris =
+                {
+                    "http://amina-identity-server:80/signout-callback-oidc",
+                    "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signout-callback-oidc"
+                },
 
                 AllowOfflineAccess = true,
 

@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amina-postgres-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amina-posgtres
+  template:
+    metadata:
+      labels:
+        app: amina-posgtres
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: amina-posgtres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: admin
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: amina-postgres-service
+spec:
+  selector:
+    app: amina-posgtres
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432

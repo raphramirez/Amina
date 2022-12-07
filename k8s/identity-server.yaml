@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: amina-is
-          image: s2dioraph/amina-identity-server:0.0.0
+          image: aminaacr.azurecr.io/amina-identity-server:0.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -45,52 +45,27 @@ metadata:
 spec:
   selector:
     app: amina-is
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
 ---
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
-  name: amina-postgres-deployment
+  name: amina-is-ingress
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: amina-posgtres
-  template:
-    metadata:
-      labels:
-        app: amina-posgtres
-    spec:
-      terminationGracePeriodSeconds: 10
-      containers:
-        - name: amina-posgtres
-          image: postgres
-          imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
-          ports:
-            - containerPort: 5432
-          env:
-            - name: POSTGRES_USER
-              value: postgres
-            - name: POSTGRES_PASSWORD
-              value: admin
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: amina-postgres-service
-spec:
-  selector:
-    app: amina-posgtres
-  type: NodePort
-  ports:
-    - protocol: TCP
-      port: 5432
-      targetPort: 5432
+  rules:
+    - host: identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: amina-is-service
+                port:
+                  number: 80
