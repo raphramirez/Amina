@@ -30,7 +30,7 @@ public static class DependencyInjection
         return services;
     }
 
-    public static IServiceCollection AddWebApiMultitenancy(this IServiceCollection services)
+    public static IServiceCollection AddWebApiMultitenancy(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddMultiTenant<MultiTenantInfo>()
            .WithHeaderStrategy("tenant")
@@ -39,7 +39,7 @@ public static class DependencyInjection
            .WithRemoteAuthenticationCallbackStrategy()
            .WithPerTenantOptions<JwtBearerOptions>((options, tenant) =>
            {
-               options.Authority = $"http://amina-identity-server:80/{tenant.Identifier}/";
+               options.Authority = $"{configuration.GetValue<string>("AuthorityDomain")}/{tenant.Identifier}/";
 
                options.TokenValidationParameters.ValidateAudience = false;
            });

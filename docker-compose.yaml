@@ -9,12 +9,36 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
   amina-identity-server:
-    build:
-      context: .
-      dockerfile: ./src/Host/IdentityServer/Dockerfile
-    container_name: "amina-identity-server"
+    image: s2dioraph/amina-identity-server
     ports:
-      - 80:80
+      - 5001:80
+    environment:
+        - ConnectionStrings__DefaultConnection=Server=amina-postgres;Port=5432;Database=amina_identityServer_root;User Id=postgres;Password=admin
+        - ConnectionStrings__DefaultApplicationConnection=Server=amina-postgres;Port=5432;Database=amina_db_root;User Id=postgres;Password=admin;
+        - ConnectionStrings__TenantAdmin=Server=amina-postgres;Port=5432;Database=amina_identityServer_tenants;User Id=postgres;Password=admin
+        - ConnectionStrings__Tenant_StudioApps=Server=amina-postgres;Port=5432;Database=amina_identityServer_s2dioapps;User Id=postgres;Password=admin
+        - ConnectionStrings__Tenant_StudioApps_ApplicationConnection=Server=amina-postgres;Port=5432;Database=amina_db_s2dioapps;User Id=postgres;Password=admin
     depends_on:
       - amina-postgres
     restart: on-failure
+  amina-web-api:
+    image: s2dioraph/amina-web-api
+    ports:
+      - 6001:80
+    environment:
+        - AuthorityDomain=http://amina-identity-server:80
+        - ConnectionStrings__DefaultConnection=Server=amina-postgres;Port=5432;Database=amina_db_root;User Id=postgres;Password=admin;
+        - ConnectionStrings__TenantAdmin=Server=amina-postgres;Port=5432;Database=amina_identityServer_tenants;User Id=postgres;Password=admin;
+    depends_on:
+      - amina-postgres
+      - amina-identity-server
+  amina-webapp-test:
+    image: amina-webapp-test
+    ports:
+      - 7001:80
+    environment:
+        - AuthorityDomain=http://amina-identity-server:80
+    depends_on:
+      - amina-postgres
+      - amina-identity-server
+      - amina-web-api

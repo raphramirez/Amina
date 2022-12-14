@@ -7,6 +7,8 @@ builder.Services.AddRazorPages();
 
 JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 
+var config = builder.Configuration;
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = "Cookies";
@@ -15,7 +17,10 @@ builder.Services.AddAuthentication(options =>
     .AddCookie("Cookies")
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = "https://localhost:5001/s2dioapps/";
+        // For development only
+        options.RequireHttpsMetadata = false;
+
+        options.Authority = $"{config.GetValue<string>("AuthorityDomain")}/s2dioapps/";
 
         options.ClientId = "web";
         options.ClientSecret = "super-secret-key";
@@ -43,7 +48,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();

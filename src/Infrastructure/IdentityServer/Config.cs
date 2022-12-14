@@ -32,6 +32,8 @@ public static class Config
                 // where to redirect to after login
                 RedirectUris =
                 {
+                    "https://localhost:5001/signin-oidc",
+                    "https://localhost:5002/signin-oidc",
                     "http://amina-identity-server:80/signin-oidc",
                     "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signin-oidc",
                 },
@@ -39,6 +41,8 @@ public static class Config
                 // where to redirect to after logout
                 PostLogoutRedirectUris =
                 {
+                    "https://localhost:5001/signout-callback-oidc",
+                    "https://localhost:5002/signout-callback-oidc",
                     "http://amina-identity-server:80/signout-callback-oidc",
                     "http://identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io/signout-callback-oidc",
                 },

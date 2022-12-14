@@ -25,14 +25,14 @@ public static class DependencyInjection
             .AddApplicationDatabase()
             .AddAuthentications()
             .AddAuthorizations()
-            .AddWebApiMultitenancy()
+            .AddWebApiMultitenancy(config)
             .AddOpenApiDocumentation();
     }
 
     public static IApplicationBuilder UseWebApiInfrastructure(this IApplicationBuilder builder, IConfiguration config)
     {
+        // .UseHttpsRedirection()
         return builder
-            .UseHttpsRedirection()
             .UseMultiTenancy()
             .UseAuthentication()
             .UseAuthorization()
@@ -41,8 +41,8 @@ public static class DependencyInjection
 
     public static IServiceCollection AddIdentityServerInfrastructure(this IServiceCollection services, IConfiguration config)
     {
+        // .AddCorsPolicy()
         return services
-                .AddCorsPolicy()
                 .AddPersistence(config)
                 .AddIdentityDatabase()
                 .AddIdentity()
@@ -62,11 +62,11 @@ public static class DependencyInjection
         }
 
         // .UseHttpsRedirection() // Ommited for redirect problem
+        // .UseCorsPolicy()
         return builder
             .UseStaticFiles()
             .UseMultiTenancy()
             .UseRouting()
-            .UseCorsPolicy()
             .UseIdentityServer()
             .UseAuthorization();
     }

@@ -2,6 +2,9 @@
 	<PropertyGroup>
 		<RootNamespace>Amina.WebAPI</RootNamespace>
 		<AssemblyName>Amina.WebAPI</AssemblyName>
+		<UserSecretsId>e8b43ae2-0dcb-4e7c-90d5-0d8f63f8461e</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
 	</PropertyGroup>
 	<ItemGroup>
 	  <AdditionalFiles Include="..\..\..\stylecop.json" Link="stylecop.json" />
@@ -14,6 +17,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 		<PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
 	</ItemGroup>

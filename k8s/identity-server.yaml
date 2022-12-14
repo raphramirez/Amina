@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: amina-is
-          image: aminaacr.azurecr.io/amina-identity-server:0.0.0
+          image: s2dioraph/amina-identity-server:0.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -28,8 +28,10 @@ spec:
               value: Server=amina-postgres-service;Port=5432;Database=amina_identityServer_tenants;User Id=postgres;Password=admin;
             - name: ConnectionStrings__Tenant_StudioApps
               value: Server=amina-postgres-service;Port=5432;Database=amina_identityServer_s2dioapps;User Id=postgres;Password=admin;
-            - name: ConnectionStrings__Tenant_ApplicationConnection
+            - name: ConnectionStrings__Tenant_StudioApps_ApplicationConnection
               value: Server=amina-postgres-service;Port=5432;Database=amina_db_s2dioapps;User Id=postgres;Password=admin;
+            - name: AuthorityDomain
+              value: "==== To be filled up here ===="
           resources:
             limits:
               memory: 512Mi
@@ -45,27 +47,8 @@ metadata:
 spec:
   selector:
     app: amina-is
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: amina-is-ingress
-  annotations:
-    kubernetes.io/ingress.class: addon-http-application-routing
-spec:
-  rules:
-    - host: identityserver.fbc2f3a5fa0f43d7adce.eastasia.aksapp.io
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: amina-is-service
-                port:
-                  number: 80

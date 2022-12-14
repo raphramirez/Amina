@@ -1,9 +1,5 @@
 using Amina.Infrastructure;
 using Amina.Infrastructure.Persistence;
-using Azure.Identity;
-using Azure.Storage.Blobs;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.HttpOverrides;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -21,34 +17,9 @@ try
         .Enrich.FromLogContext()
         .ReadFrom.Configuration(ctx.Configuration));
 
-    var forwardOptions = new ForwardedHeadersOptions
-    {
-        ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
-        RequireHeaderSymmetry = false,
-    };
-
-    forwardOptions.KnownNetworks.Clear();
-    forwardOptions.KnownProxies.Clear();
-
-    // Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery
-    string connectionString = "DefaultEndpointsProtocol=https;AccountName=aminastorage;AccountKey=UW7DHNjKYq95qWOfIJ+dHSVzMZOV6afeB0Pjxw5Q/zFi6a16tSlnijL9Kh/S9f2ky5ZjNORAKVF7+AStFY1Rgw==;EndpointSuffix=core.windows.net";
-    string containerName = "my-key-container";
-    string blobName = "keys.xml";
-    BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
-    BlobClient blobClient = container.GetBlobClient(blobName);
-
-    builder.Services.AddDataProtection()
-        .PersistKeysToAzureBlobStorage(blobClient)
-        .ProtectKeysWithAzureKeyVault(new Uri("https://amina-keyvault.vault.azure.net/keys/dataprotection"), new DefaultAzureCredential());
-
-    // optional - provision the container automatically
-    await container.CreateIfNotExistsAsync();
-
     builder.Services.AddIdentityServerInfrastructure(builder.Configuration);
 
     var app = builder.Build();
-
-    app.UseForwardedHeaders(forwardOptions);
 
     await app.Services.InitializeDatabasesAsync();
 
